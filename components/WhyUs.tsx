@@ -8,7 +8,7 @@ export default function WhyUs() {
           <div className="section-tag">Proč my</div>
           <h2>
             JINAK NEŽ<br />
-            <span>AGENTURA</span>
+            <span>OSTATNÍ</span>
           </h2>
           <p className="why-text">
             Agentura vám za <strong>50 000 Kč</strong> dodá web za dva měsíce a přiloží

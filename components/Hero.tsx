@@ -11,7 +11,7 @@ export default function Hero() {
       </h1>
       <div className="hero-bottom">
         <p className="hero-desc">
-        Zapomeňte na čekání a kompromisy. S <span className="hero-ai">AI workflow</span> stavíme přesně to co chcete — <span className="hero-highlight">rychleji</span> než si myslíte, <span className="hero-highlight">levněji</span> než očekáváte.
+        Zapomeňte na čekání a kompromisy.<br />S <span className="hero-ai">AI workflow</span> stavíme přesně to co chcete — <span className="hero-highlight">rychleji</span> než si myslíte, <span className="hero-highlight">levněji</span> než očekáváte.
         </p>
         <div className="hero-stats">
           <div className="hstat">

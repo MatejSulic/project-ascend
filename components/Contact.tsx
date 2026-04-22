@@ -13,7 +13,7 @@ export default function Contact() {
         </h2>
       </Reveal>
       <Reveal>
-        <p>Pošlete mi odkaz na váš web. Ukážu vám jak by mohl vypadat — zdarma, bez závazku, bez čekání.</p>
+        <p><strong>Zavolejte mi</strong> nebo <strong>pošlete odkaz na váš web</strong>. Ukážu vám jak by mohl vypadat — <strong>zdarma, bez závazku, bez čekání</strong>.</p>
       </Reveal>
       <Reveal>
         <div className="contact-actions">

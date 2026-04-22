@@ -5,7 +5,7 @@ const steps = [
     num: '01',
     icon: '🔍',
     title: 'Najdu vás',
-    desc: 'Podívám se na váš web. Když vidím prostor ke zlepšení — a skoro vždy ho vidím — připravím návrh ještě předtím, než se vůbec ozveme.',
+    desc: 'Podívám se na váš web. Když vidím prostor ke zlepšení připravím návrh ještě předtím, než se vůbec ozveme.',
     time: 'Den 0',
   },
   {
@@ -19,15 +19,15 @@ const steps = [
     num: '03',
     icon: '📞',
     title: 'Domluvíme se',
-    desc: 'Patnáct minut. Projdeme návrh, doladíme detaily. Žádné týdenní email vlákno, žádné zbytečné schůzky.',
+    desc: 'Probereme návrh, zodpovím vaše otázky a doladíme detaily. Vše bez zbytečného čekání a několika kol zpětné vazby.',
     time: 'Den 2',
   },
   {
     num: '04',
     icon: '🚀',
-    title: 'Web je živý',
-    desc: 'Pět dní od zálohy. Ne šest týdnů, ne osm. Pět dní — a máte web který se nestydí.',
-    time: 'Den 5–7',
+    title: 'Vytvořím váš web',
+    desc: 'Během pár dní vám pošlu hotový web. Rychle, kvalitně, bez zbytečných kompromisů.',
+    time: 'Den 5–10',
   },
 ]
 

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Syne, Bebas_Neue, DM_Sans } from 'next/font/google'
 import './globals.css'
 import Cursor from '@/components/Cursor'
+import LoadingScreen from '@/components/LoadingScreen'
 
 const syne = Syne({
   subsets: ['latin'],
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="cs" className={`${syne.variable} ${bebasNeue.variable} ${dmSans.variable}`}>
       <body>
+        <LoadingScreen />
         <Cursor />
         {children}
       </body>

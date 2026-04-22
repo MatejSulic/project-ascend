@@ -27,7 +27,7 @@ export default function About() {
             JSEM <span>JÁ</span>
           </h2>
           <p>
-            Jsem <strong>Matěj Šulič</strong> a toto je <strong>Project</strong><span className="accent-text">Ascend</span>. Nepotřebuji tým deseti lidí ani pětipodlažní kancelář aby byl web dobrý. 
+            Jsem <strong>Matěj Šulič</strong> a toto je <strong>Project</strong><span className="accent-text">Ascend</span>. Nepotřebuji tým deseti lidí ani pětipodlažní kancelář aby byl web kvalitní. 
             Kombinuji moderní AI nástroje s dobrým designem — <a href="#kontakt" className="about-link">přesvědčte se sami</a>.
           </p>
           <p>

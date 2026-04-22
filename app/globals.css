@@ -10,6 +10,74 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* LOADING SCREEN */
+.loader {
+  position: fixed;
+  inset: 0;
+  background: var(--black);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease;
+}
+
+.loader-hide {
+  opacity: 0;
+}
+
+.loader-inner {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.loader-track {
+  stroke: #1a1a1a;
+  stroke-width: 1.5;
+}
+
+.loader-circle {
+  stroke: var(--orange);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-dasharray: 276;
+  stroke-dashoffset: 276;
+  animation: drawCircle 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
+}
+
+@keyframes drawCircle {
+  to { stroke-dashoffset: 0; }
+}
+
+.loader-logo {
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: -0.3px;
+  color: var(--white);
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.5s ease 1s forwards;
+}
+
+.loader-logo span { color: var(--orange); }
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
 /* SCROLLBAR */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--black); }
@@ -637,6 +705,7 @@ section {
   font-style: italic;
   margin-bottom: 40px;
 }
+#kontakt p strong { color: var(--white); font-style: normal; }
 
 .contact-actions {
   display: flex;
