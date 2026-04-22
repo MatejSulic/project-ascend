@@ -1,14 +1,9 @@
+import HeroVideoSide from './HeroVideoSide'
+
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="stickers">
-        <div className="sticker s1">⚡ AI Workflow</div>
-        <div className="sticker s2">✓ Web za 5 dní</div>
-        <div className="sticker s3">🚀 Hotovo dřív<br />než čekáš</div>
-        <div className="sticker s4">💰 Od 10 000 Kč</div>
-        <div className="sticker s5">Google ready</div>
-      </div>
-
+      <HeroVideoSide />
       <div className="hero-tag">Web Design · AI Workflow · ČR</div>
       <h1 className="hero-headline">
         PROJECT<br />

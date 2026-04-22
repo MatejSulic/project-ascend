@@ -10,7 +10,7 @@ const chips = [
 ]
 
 const stats = [
-  { val: '5', accent: true, label: 'Dní dodání' },
+  { val: '5-10', accent: true, label: 'Dní dodání' },
   { val: '4×', accent: false, label: 'Levnější než agentura' },
   { val: '<24h', accent: true, label: 'Odpověď na dotaz' },
   { val: 'CZ', accent: false, label: 'Česky, lokálně, na telefonu' },
@@ -27,10 +27,10 @@ export default function About() {
             JSEM <span>JÁ</span>
           </h2>
           <p>
-            Jsem <strong>Matěj Šulič</strong> a toto je <strong>Project</strong><span className="accent-text">Ascend</span>. Nepotřebuji tým deseti lidí ani pětipodlažní kancelář aby byl web dobrý. Kombinuji moderní AI nástroje s dobrým designem — a výsledek mluví za sebe.
+            Jsem <strong>Matěj Šulič</strong> a toto je <strong>Project</strong><span className="accent-text">Ascend</span>. Nepotřebuji tým deseti lidí ani pětipodlažní kancelář aby byl web dobrý. 
+            Kombinuji moderní AI nástroje s dobrým designem — <a href="#kontakt" className="about-link">přesvědčte se sami</a>.
           </p>
           <p>
-            Když mi napíšete, odpovím do pár hodin. <strong>Ne za tři dny.</strong>
           </p>
           <div className="skills-chips">
             {chips.map((chip) => (

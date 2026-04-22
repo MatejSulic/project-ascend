@@ -10,6 +10,15 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--orange2); }
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -54,7 +63,7 @@ nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  padding: 24px 40px;
+  padding: 24px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,10 +129,47 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 40px 120px;
+  padding: 0 80px 140px;
   position: relative;
   overflow: hidden;
 }
+
+/* VIDEO SIDE */
+.hero-video-side-wrap {
+  position: absolute;
+  right: -45%;
+  top: 0;
+  height: 100%;
+  width: auto;
+  z-index: 2;
+  mask-image: linear-gradient(to right, transparent 0%, black 18%, black 75%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 18%, black 75%, transparent 100%);
+}
+
+.hero-video-side {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-video-side-tint {
+  position: absolute;
+  inset: 0;
+  background: var(--orange);
+  mix-blend-mode: color;
+  opacity: 0.85;
+}
+
+.hero-video-side-tint::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--orange);
+  mix-blend-mode: multiply;
+  opacity: 0.25;
+}
+
 
 .hero::before {
   content: '';
@@ -151,6 +197,13 @@ nav {
   background-size: 60px 60px;
   pointer-events: none;
   mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
+.hero-tag,
+.hero-headline,
+.hero-bottom {
+  position: relative;
+  z-index: 3;
 }
 
 .hero-tag {
@@ -217,10 +270,20 @@ nav {
 
 .hero-stats {
   display: flex;
-  gap: 32px;
+  gap: 1px;
+  background: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: 0;
 }
 
-.hstat { text-align: right; }
+.hstat {
+  text-align: left;
+  background: #0f0f0f;
+  padding: 16px 28px;
+}
 
 .hstat-val {
   font-family: var(--font-bebas), sans-serif;
@@ -244,7 +307,7 @@ nav {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  z-index: 2;
+  z-index: 3;
 }
 
 .sticker {
@@ -276,9 +339,17 @@ nav {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* DIVIDER */
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--orange) 30%, var(--orange) 70%, transparent 100%);
+  opacity: 0.25;
+}
+
 /* SECTION GENERIC */
 section {
-  padding: 100px 40px;
+  padding: 100px 80px;
   position: relative;
 }
 
@@ -479,6 +550,15 @@ section {
 
 .about-left p strong { color: var(--white); font-style: normal; }
 
+.about-link {
+  color: var(--orange);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(212,92,30,0.4);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.about-link:hover { color: var(--orange2); border-color: var(--orange2); }
+
 .skills-chips {
   display: flex;
   flex-wrap: wrap;
@@ -538,7 +618,7 @@ section {
 #kontakt {
   border-top: 1px solid #1a1a1a;
   text-align: center;
-  padding: 120px 40px;
+  padding: 120px 80px;
 }
 
 #kontakt h2 {
@@ -611,7 +691,7 @@ section {
 footer {
   background: #060606;
   border-top: 1px solid #1a1a1a;
-  padding: 24px 40px;
+  padding: 24px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -739,12 +819,11 @@ footer p {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  nav { padding: 18px 20px; }
+  nav { padding: 18px 24px; }
   .nav-links { display: none; }
-  .hero { padding: 0 20px 50px; }
-  section { padding: 70px 20px; }
+  .hero { padding: 0 24px 80px; }
+  section { padding: 70px 24px; }
+  #kontakt { padding: 80px 24px; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .sticker { font-size: 0.6rem; padding: 6px 10px; }
-  .s3, .s5 { display: none; }
-  footer { padding: 20px; }
+  footer { padding: 20px 24px; }
 }

@@ -6,6 +6,7 @@ import WhyUs from '@/components/WhyUs'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import Divider from '@/components/Divider'
 
 export default function Home() {
   return (
@@ -13,9 +14,11 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <Divider />
+        <WhyUs />
         <HowItWorks />
         <Services />
-        <WhyUs />
+       
         <About />
         <Contact />
       </main>
