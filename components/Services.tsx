@@ -4,26 +4,26 @@ const services = [
   {
     num: '01',
     name: 'Nový web od základu',
-    desc: 'Moderní design, mobilní verze, kontaktní formulář, hosting setup',
+    desc: 'Moderní design, mobilní verze, kontaktní formulář',
     price: '15 000–25 000 Kč',
   },
   {
     num: '02',
     name: 'Redesign stávajícího webu',
-    desc: 'Zachování obsahu, nový vizuál, rychlost, SEO základ',
+    desc: 'Zachování obsahu, nový vizuál, rychlost, připravenost pro Google',
     price: '10 000–20 000 Kč',
   },
   {
     num: '03',
     name: 'Správa webu / Retainer',
-    desc: 'Aktualizace, hosting, opravy, drobné změny každý měsíc',
-    price: '2 500–3 500 Kč/měs',
+    desc: 'Aktualizace, opravy, drobné změny každý měsíc',
+    price: '2 000–3 000 Kč/měs',
   },
   {
     num: '04',
-    name: 'Google Business profil',
-    desc: 'Setup a optimalizace — více zobrazení v Mapách',
-    price: '3 000–5 000 Kč',
+    name: 'Jednoduchá webová aplikace',
+    desc: 'Rezervační systém, kalkulačka, formulář s logikou — cokoliv co váš web potřebuje navíc',
+    price: 'Dle rozsahu',
   },
 ]
 
@@ -35,6 +35,9 @@ export default function Services() {
         SLUŽBY &amp;<br />
         <span>CENY</span>
       </h2>
+      <p className="services-intro">
+        Žádné balíčky, žádné skryté poplatky. Víte přesně co dostanete — a zaplatíte za to, ne za kancelář a tým který váš web ani nevidí.
+      </p>
       <Reveal>
         {services.map((s) => (
           <div key={s.num} className="service-row">

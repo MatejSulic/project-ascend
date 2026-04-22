@@ -23,7 +23,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Project Ascend — Matej',
+  title: 'Project Ascend — Matěj Šulič',
   description: 'Weby pro řemeslníky — instalatéry, elektrikáře, topenáře.',
 }
 

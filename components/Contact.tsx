@@ -13,12 +13,17 @@ export default function Contact() {
         </h2>
       </Reveal>
       <Reveal>
-        <p>Napište mi — do 24 hodin pošlu ukázkový návrh vašeho webu zdarma.</p>
+        <p>Pošlete mi odkaz na váš web. Ukážu vám jak by mohl vypadat — zdarma, bez závazku, bez čekání.</p>
       </Reveal>
       <Reveal>
-        <a href="mailto:ahoj@projectascend.cz" className="contact-btn">
-          Napsat mi → ahoj@projectascend.cz
-        </a>
+        <div className="contact-actions">
+          <a href="mailto:info@projectascend.cz" className="contact-btn">
+            info@projectascend.cz
+          </a>
+          <a href="tel:+420728473221" className="contact-phone">
+            +420 728 473 221
+          </a>
+        </div>
       </Reveal>
     </section>
   )

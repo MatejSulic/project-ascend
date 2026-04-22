@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="f-logo">
         Project<span>Ascend</span>
       </div>
-      <p>© 2026 · Matej · Weby pro řemeslníky</p>
+      <p>© 2026 · Matěj Šulič · Project Ascend</p>
     </footer>
   )
 }

@@ -1,20 +1,19 @@
 import Reveal from './Reveal'
 
 const chips = [
-  { label: 'React', hot: true },
+  { label: 'Next.JS', hot: true },
   { label: 'HTML/CSS', hot: true },
   { label: 'Claude Code', hot: true },
   { label: 'JavaScript', hot: false },
-  { label: 'SEO základy', hot: false },
-  { label: 'Figma', hot: false },
-  { label: 'Playwright', hot: false },
+  { label: 'Python', hot: false },
+  { label: 'Google Gemini', hot: false },
 ]
 
 const stats = [
-  { val: '5', accent: true, label: 'Dní dodání webu' },
-  { val: '100%', accent: false, label: 'Záloha před dodáním' },
-  { val: '20+', accent: true, label: 'Hodin týdně pro tebe' },
-  { val: 'CZ', accent: false, label: 'Lokální, česky, na telefonu' },
+  { val: '5', accent: true, label: 'Dní dodání' },
+  { val: '4×', accent: false, label: 'Levnější než agentura' },
+  { val: '<24h', accent: true, label: 'Odpověď na dotaz' },
+  { val: 'CZ', accent: false, label: 'Česky, lokálně, na telefonu' },
 ]
 
 export default function About() {
@@ -28,10 +27,10 @@ export default function About() {
             JSEM <span>JÁ</span>
           </h2>
           <p>
-            Jmenuji se <strong>Matej</strong> a stavím weby které skutečně fungují. Nejde mi o krásný design pro design — jde mi o to, aby váš telefon začal zvonit víc.
+            Jsem <strong>Matěj Šulič</strong> a toto je <strong>Project</strong><span className="accent-text">Ascend</span>. Nepotřebuji tým deseti lidí ani pětipodlažní kancelář aby byl web dobrý. Kombinuji moderní AI nástroje s dobrým designem — a výsledek mluví za sebe.
           </p>
           <p>
-            Pracuju rychle, komunikuju přímo a vždy dodám co slíbím. Každý projekt beru jako svůj vlastní byznys.
+            Když mi napíšete, odpovím do pár hodin. <strong>Ne za tři dny.</strong>
           </p>
           <div className="skills-chips">
             {chips.map((chip) => (
