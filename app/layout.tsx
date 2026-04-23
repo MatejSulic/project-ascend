@@ -36,13 +36,27 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: 'Project Ascend — Matěj Šulič',
-  description: 'Weby pro řemeslníky — instalatéry, elektrikáře, topenáře.',
+  description: 'Moderní weby s AI workflow. Rychleji než agentura, levněji než čekáte — dodání za 5–10 dní.',
+  metadataBase: new URL('https://projectascend.cz'),
+  openGraph: {
+    title: 'Project Ascend — Matěj Šulič',
+    description: 'Moderní weby s AI workflow. Rychleji než agentura, levněji než čekáte — dodání za 5–10 dní.',
+    url: 'https://projectascend.cz',
+    siteName: 'Project Ascend',
+    locale: 'cs_CZ',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Project Ascend — Matěj Šulič',
+    description: 'Moderní weby s AI workflow. Rychleji než agentura, levněji než čekáte — dodání za 5–10 dní.',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="cs" className={`${syne.variable} ${bebasNeue.variable} ${dmSans.variable}`}>
-      <body>
+      <body suppressHydrationWarning>
         <LoadingScreen />
         <Cursor />
         {children}

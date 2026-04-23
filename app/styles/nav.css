@@ -43,6 +43,20 @@ nav {
 
 .nav-links a:hover { color: var(--white); }
 
+.nav-links a.nav-link-active {
+  color: var(--orange);
+}
+
+.nav-links a.nav-link-active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--orange);
+  margin-top: 2px;
+  opacity: 0.5;
+}
+
 .nav-cta {
   font-family: var(--font-syne), sans-serif;
   font-size: 0.72rem;
