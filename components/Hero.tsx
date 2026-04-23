@@ -4,6 +4,7 @@ export default function Hero() {
   return (
     <section className="hero">
       <HeroVideoSide />
+      <div className="hero-bottom-fade" />
       <div className="hero-tag">Web Design · AI Workflow · ČR</div>
       <h1 className="hero-headline">
         PROJECT<br />
@@ -23,6 +24,7 @@ export default function Hero() {
             <span className="hstat-label">Cena od Kč</span>
           </div>
         </div>
+        <a href="#contact" className="hero-mobile-cta">Spolupracovat →</a>
       </div>
     </section>
   )

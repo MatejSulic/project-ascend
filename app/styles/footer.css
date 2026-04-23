@@ -1,0 +1,35 @@
+footer {
+  background: #060606;
+  border-top: 1px solid #1a1a1a;
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+footer .f-logo {
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: var(--white);
+}
+
+footer .f-logo span { color: var(--orange); }
+
+footer p {
+  font-size: 0.72rem;
+  color: #333;
+  font-family: var(--font-syne), sans-serif;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 20px 24px;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}

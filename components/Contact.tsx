@@ -2,7 +2,7 @@ import Reveal from './Reveal'
 
 export default function Contact() {
   return (
-    <section id="kontakt">
+    <section id="contact">
       <div className="section-tag" style={{ justifyContent: 'center' }}>
         Pojďme na to
       </div>

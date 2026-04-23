@@ -33,7 +33,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="jak">
+    <section id="how-it-works">
       <div className="section-tag">Proces</div>
       <h2>
         JAK TO<br />

@@ -2,7 +2,7 @@ import Reveal from './Reveal'
 
 export default function WhyUs() {
   return (
-    <section id="proc-my">
+    <section id="why-us">
       <Reveal className="why-content">
         <div className="why-left">
           <div className="section-tag">Proč my</div>

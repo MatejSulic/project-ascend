@@ -1,0 +1,81 @@
+#services { border-top: 1px solid #1a1a1a; }
+
+#services h2 {
+  font-family: var(--font-bebas), sans-serif;
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.95;
+  margin-bottom: 60px;
+}
+
+#services h2 span { color: var(--orange); }
+
+.services-intro {
+  font-size: 0.88rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 36px;
+}
+
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  border-bottom: 1px solid #1a1a1a;
+  gap: 20px;
+  transition: transform 0.25s, background 0.25s;
+  cursor: default;
+  flex-wrap: wrap;
+}
+
+.service-row:hover { transform: translateX(16px); background: rgba(212, 92, 30, 0.04); }
+.service-row:first-child { border-top: 1px solid #1a1a1a; }
+
+.service-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.service-num {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 0.68rem;
+  color: var(--muted);
+  min-width: 24px;
+}
+
+.service-name {
+  font-family: var(--font-syne), sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.3px;
+}
+
+.service-desc {
+  font-size: 0.78rem;
+  color: #555;
+  font-style: italic;
+  max-width: 300px;
+}
+
+.service-price {
+  font-family: var(--font-bebas), sans-serif;
+  font-size: 1.6rem;
+  color: var(--orange);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .service-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 22px 0;
+  }
+
+  .service-row:hover { transform: none; }
+
+  .service-price { font-size: 1.3rem; }
+  .service-desc { max-width: 100%; }
+}

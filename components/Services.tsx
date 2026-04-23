@@ -29,7 +29,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="sluzby">
+    <section id="services">
       <div className="section-tag">Co nabízím</div>
       <h2>
         SLUŽBY &amp;<br />

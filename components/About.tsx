@@ -18,7 +18,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="o-mne">
+    <section id="about">
       <div className="about-grid">
         <Reveal className="about-left">
           <div className="section-tag">O mně</div>
@@ -28,7 +28,7 @@ export default function About() {
           </h2>
           <p>
             Jsem <strong>Matěj Šulič</strong> a toto je <strong>Project</strong><span className="accent-text">Ascend</span>. Nepotřebuji tým deseti lidí ani pětipodlažní kancelář aby byl web kvalitní. 
-            Kombinuji moderní AI nástroje s dobrým designem — <a href="#kontakt" className="about-link">přesvědčte se sami</a>.
+            Kombinuji moderní AI nástroje s dobrým designem — <a href="#contact" className="about-link">přesvědčte se sami</a>.
           </p>
           <p>
           </p>
