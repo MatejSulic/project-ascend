@@ -43,14 +43,9 @@
 }
 
 .loader-logo {
-  font-family: var(--font-syne), sans-serif;
-  font-weight: 800;
-  font-size: 1.3rem;
-  letter-spacing: -0.3px;
-  color: var(--white);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
-  animation: fadeIn 0.5s ease 1s forwards;
+  animation: fadeIn 0.4s ease 0.3s forwards;
 }
-
-.loader-logo span { color: var(--orange); }

@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 export default function LoadingScreen() {
   const [hiding, setHiding] = useState(false)
@@ -21,7 +22,7 @@ export default function LoadingScreen() {
           <circle className="loader-circle" cx="50" cy="50" r="44" />
         </svg>
         <div className="loader-logo">
-          Project<span>Ascend</span>
+          <Image src="/pa-logo-big-white.png" alt="Project Ascend" width={130} height={130} style={{ objectFit: 'contain' }} priority />
         </div>
       </div>
     </div>

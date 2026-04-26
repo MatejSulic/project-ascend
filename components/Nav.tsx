@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 const sections = ['why-us', 'how-it-works', 'services', 'about', 'contact']
 
@@ -30,7 +31,7 @@ export default function Nav() {
     <>
       <nav>
         <a href="#" className="nav-logo">
-          Project<span>Ascend</span>
+          <Image src="/pa-logo-line.png" alt="Project Ascend" height={32} width={160} style={{ objectFit: 'contain' }} priority />
         </a>
         <ul className="nav-links">
           <li><a href="#why-us" className={cls('why-us')}>Proč my</a></li>
