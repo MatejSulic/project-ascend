@@ -226,7 +226,7 @@
 /* HERO MOBILE */
 @media (max-width: 768px) {
   .hero {
-    padding: 0 24px 80px;
+    padding: 0 24px 4vh;
   }
 
   .hero-headline {
