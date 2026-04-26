@@ -1,8 +1,10 @@
 import Reveal from './Reveal'
+import FloatingLogos from './FloatingLogos'
 
 export default function Contact() {
   return (
-    <section id="contact">
+    <section id="contact" style={{ position: 'relative', overflow: 'hidden' }}>
+      <FloatingLogos />
       <div className="section-tag" style={{ justifyContent: 'center' }}>
         Pojďme na to
       </div>

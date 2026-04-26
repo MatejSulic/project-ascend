@@ -1,8 +1,10 @@
 import Reveal from './Reveal'
+import FloatingLogos from './FloatingLogos'
 
 export default function WhyUs() {
   return (
-    <section id="why-us">
+    <section id="why-us" style={{ position: 'relative', overflow: 'hidden' }}>
+      <FloatingLogos />
       <Reveal className="why-content">
         <div className="why-left">
           <div className="section-tag">Proč my</div>

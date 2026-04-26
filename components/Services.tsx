@@ -1,5 +1,5 @@
 import Reveal from './Reveal'
-
+import FloatingLogos from './FloatingLogos'
 
 const services = [
   {
@@ -30,7 +30,8 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services">
+    <section id="services" style={{ position: 'relative' }}>
+      <FloatingLogos />
       <div className="section-tag">Co nabízím</div>
       <h2>
         SLUŽBY &amp;<br />
