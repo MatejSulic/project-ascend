@@ -5,19 +5,19 @@ const services = [
     num: '01',
     name: 'Nový web od základu',
     desc: 'Moderní design, mobilní verze, kontaktní formulář',
-    price: '10 000 – 25 000 Kč',
+    price: '10 000–25 000 Kč',
   },
   {
     num: '02',
     name: 'Redesign stávajícího webu',
     desc: 'Zachování obsahu, nový vizuál, rychlost, připravenost pro Google',
-    price: '8000 – 15 000 Kč',
+    price: '8000–15 000 Kč',
   },
   {
     num: '03',
     name: 'Správa webu / Retainer',
     desc: 'Aktualizace, opravy, drobné změny každý měsíc',
-    price: '2 000 – 3 000 Kč/měs',
+    price: '2 000–3 000 Kč/měs',
   },
   {
     num: '04',
