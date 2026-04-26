@@ -86,7 +86,7 @@
 
 .hero-tag {
   font-family: var(--font-syne), sans-serif;
-  font-size: 0.68rem;
+  font-size: 0.5rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--orange);
@@ -286,7 +286,7 @@
   }
 
   .hero-video-side-wrap {
-    left: -65%;
+    left: -35%;
     top: -20%;
     mask-image:
       linear-gradient(to bottom, black 55%, transparent 82%),
