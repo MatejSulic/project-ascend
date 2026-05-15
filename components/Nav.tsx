@@ -7,6 +7,12 @@ const sections = ['why-us', 'how-it-works', 'services', 'about', 'contact']
 export default function Nav() {
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState('')
+
+  useEffect(() => {
+    document.body.classList.toggle('menu-open', open)
+    return () => document.body.classList.remove('menu-open')
+  }, [open])
+
   const close = () => setOpen(false)
 
   useEffect(() => {
